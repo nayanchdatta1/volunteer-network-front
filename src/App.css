@@ -19,8 +19,8 @@ a{
   text-decoration: none;
 }
 .container{
-  max-width: 1150px;
   width: 100%;
+  max-width: 1150px;
   margin: 0 auto;
   /* background-color: aquamarine; */
 }
@@ -41,6 +41,7 @@ img{
   background: linear-gradient( rgba(248, 248, 248, 0.9), rgba(247, 247, 247, 0.9)), url('./Utilities/images/bg.jpg');
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 /* Navbar section  */
 .navbar__wrapper{
@@ -69,7 +70,7 @@ img{
 }
 .nav__items .nav__link{
   margin-left: 30px;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: var(--font-secondary);
   line-height: 1.2;
   font-weight: 500;
@@ -523,7 +524,7 @@ input[type=text], input[ type=date], textarea{
 
 
 /* Responsive codes  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* Nabar  */
   .navbar{
     width: 100%;

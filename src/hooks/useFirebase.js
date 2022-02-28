@@ -1,7 +1,6 @@
 import firebaseInit from "../Firebase/firebase.init";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth'
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 // Firebase init called 
 firebaseInit();
