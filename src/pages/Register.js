@@ -29,7 +29,7 @@ const Register = () => {
             name, email, description, regisDate: currentDate, event
         };
 
-        fetch('http://localhost:5000/volunteers', {
+        fetch('https://volunteernetwork-vn.herokuapp.com/volunteers', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

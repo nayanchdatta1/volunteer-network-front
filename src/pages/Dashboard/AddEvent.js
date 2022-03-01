@@ -14,12 +14,12 @@ const AddEvent = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const title = titleRef.current.value;
-        const desc = descRef.current.value;
+        const description = descRef.current.value;
         const date = dateRef.current.value;
 
-        const event = { title, desc, date };
+        const event = { title, description, date };
 
-        fetch('http://localhost:5000/events', {
+        fetch('https://volunteernetwork-vn.herokuapp.com/events', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

@@ -7,7 +7,7 @@ const Home = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/events')
+        fetch('https://volunteernetwork-vn.herokuapp.com/events')
             .then(res => res.json())
             .then(data => setEvents(data));
 
@@ -16,7 +16,7 @@ const Home = () => {
     const handleSearch = (value) => {
         if (value !== '') {
             console.log(value);
-            fetch(`http://localhost:5000/events/filter?q=${value}`)
+            fetch(`https://volunteernetwork-vn.herokuapp.com/events/filter?q=${value}`)
                 .then(res => res.json())
                 .then(data => {
                     setEvents(data);

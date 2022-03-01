@@ -13,7 +13,7 @@ const UserDashboard = () => {
     const handleDeleteRegEvent = (id) => {
         const ans = window.confirm("Would you like to cancel?");
         ans &&
-            fetch(`http://localhost:5000/volunteers/${id}`, {
+            fetch(`https://volunteernetwork-vn.herokuapp.com/volunteers/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"

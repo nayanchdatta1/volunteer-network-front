@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const VolunteerTable = () => {
     const [volunteers, setVolunteers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/volunteers')
+        fetch('https://volunteernetwork-vn.herokuapp.com/volunteers')
             .then(res => res.json())
             .then(volunteer => setVolunteers(volunteer));
 
@@ -15,7 +15,7 @@ const VolunteerTable = () => {
         const response = window.confirm("Would you like to remove the volunteer?");
 
         response &&
-            fetch(`http://localhost:5000/volunteers/${id}`, {
+            fetch(`https://volunteernetwork-vn.herokuapp.com/volunteers/${id}`, {
                 method: 'DELETE',
                 headers: {
                     "content-type": "application/json"
