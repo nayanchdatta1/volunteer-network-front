@@ -28,11 +28,9 @@ const NavBar = () => {
                         <li><Link to="/" className='nav__link'>Home</Link></li>
                         <li><Link to="#" className='nav__link'>Donation</Link></li>
                         <li><Link to="/events" className='nav__link'>Events</Link></li>
-                        <li><Link to="#" className='nav__link'>Blog</Link></li>
+                        <li><Link to="#" className='nav__link'>News</Link></li>
                         {user.email && <li><Link to="/dashboard" className='nav__link'>Dashboard</Link></li>}
-
-                        {!user.email && <li><Link to="/register" className='nav__link'>Register</Link></li>}
-
+                        {user.email && <li><Link to="#" className='nav__link text-skyblue'>{user.displayName}</Link></li>}
                         {user.email ? <button onClick={logOut} className='btn btn-fill'>Logout</button>
                             : <li><Link to="/login" className='nav__link btn btn-fill'>Login</Link></li>}
 

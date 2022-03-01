@@ -1,8 +1,6 @@
 import Cart from './Cart';
 
-const EventCarts = (props) => {
-    // console.log(props)
-    const events = props.events;
+const EventCarts = ({ events }) => {
 
     return (
         <section className='events__wrapper'>

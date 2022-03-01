@@ -22,7 +22,6 @@ const Login = () => {
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </div>
 
-                    <p className='hello__text'>{user.email && `Hello <span> ${user.displayName} </span>`}</p>
                     <div className="login__content">
                         <h2>Login With</h2>
                         <div className='g__signin'>

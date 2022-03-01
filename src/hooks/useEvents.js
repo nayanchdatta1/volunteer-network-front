@@ -10,9 +10,9 @@ const useEvents = () => {
 
     }, []);
 
-
     return {
-        events
+        events,
+        setEvents
     };
 };
 

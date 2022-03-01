@@ -1,17 +1,14 @@
-import useEvents from '../../hooks/useEvents';
 import Footer from '../Footer/Footer';
 import NavBar from '../Header/NavBar';
 import EventCarts from './EventCarts';
 
 const Events = () => {
-    const { events } = useEvents();
-
     return (
         <>
             <div className='container'>
                 <NavBar />
-                <p className=' my-3'>Events going on...</p>
-                <EventCarts events={events} />
+                <h2 className='my-3 text-center text-skyblue'>Events going on...</h2>
+                <EventCarts />
             </div>
 
             <Footer />

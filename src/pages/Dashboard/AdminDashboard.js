@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import logo from '../../Utilities/logos/logo.png';
 
-const Dashboard = () => {
+const AdminDashboard = () => {
     const location = useLocation();
     return (
         <div className='dashboard__wrapper'>
@@ -32,4 +32,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default AdminDashboard;
